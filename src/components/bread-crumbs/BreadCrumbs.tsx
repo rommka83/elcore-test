@@ -3,15 +3,11 @@ import { IBreadCrumbs } from './BreadCrumbs.types';
 
 export function BreadCrumbs({ className }: IBreadCrumbs) {
   return (
-    <div className={`bg-bg-secondary md:bg-bg-tertiary py-2 ${className}`}>
+    <div className={`bg-bg-secondary py-2 md:bg-bg-tertiary ${className}`}>
       <div className='container flex gap-2'>
-        <span className='text-text-secondary cursor-pointer text-[8px]'>
-          Главная
-        </span>
-        <span className='text-text-secondary text-[8px]'>/</span>
-        <span className='text-text-secondary cursor-pointer text-[8px]'>
-          Новости и статьи
-        </span>
+        <span className='bread-crumbs cursor-pointer'>Главная</span>
+        <span className='bread-crumbs'>/</span>
+        <span className='bread-crumbs cursor-pointer'>Новости и статьи</span>
       </div>
     </div>
   );

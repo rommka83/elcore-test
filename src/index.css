@@ -34,3 +34,11 @@ footer {
 .page-hover {
   @apply rounded border border-b-bg-btn-secondary p-1;
 }
+
+.bread-crumbs {
+  @apply text-[8px] text-text-secondary sm:text-xs md:text-sm;
+}
+
+.card-text-tertiary {
+  @apply text-text-tertiary sm:text-xs md:text-sm;
+}

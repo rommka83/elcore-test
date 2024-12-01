@@ -9,15 +9,11 @@ export function Card({ className, item }: ICard) {
       <div className='flex gap-1'>
         {item.type === 'news' && (
           <>
-            <span className='text-[8px] text-text-tertiary sm:text-xs md:text-sm'>
-              12 июля 2024
-            </span>
-            <span className='text-[8px] text-text-tertiary sm:text-xs md:text-sm'>
-              /
-            </span>
+            <span className='card-text-tertiary text-[8px]'>{item.date}</span>
+            <span className='card-text-tertiary text-[8px]'>/</span>
           </>
         )}
-        <span className='text-[8px] text-text-tertiary sm:text-xs md:text-sm'>
+        <span className='card-text-tertiary text-[8px]'>
           {item.type === 'news' ? 'Новость' : 'Статья'}
         </span>
       </div>
