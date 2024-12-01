@@ -9,7 +9,7 @@ export function News() {
   useEffect(() => {
     const arr = DB.filter((item) => item.type === 'news');
     setWorkArr(arr);
-  }, [DB]);
+  }, []);
 
   return <CardList workArr={workArr} />;
 }
