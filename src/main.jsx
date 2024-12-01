@@ -11,7 +11,7 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<App />}>
+        <Route path='/elcore-test' element={<App />}>
           <Route index element={<NewsAndArticles />} />
           <Route path='news' element={<News />} />
           <Route path='articles' element={<Articles />} />

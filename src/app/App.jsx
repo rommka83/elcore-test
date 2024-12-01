@@ -8,13 +8,13 @@ function App() {
 
   useEffect(() => {
     switch (pathname) {
-      case '/':
+      case '/elcore-test':
         setTitle('Новости и статьи');
         break;
-      case '/news':
+      case '/elcore-test/news':
         setTitle('Новости');
         break;
-      case '/articles':
+      case '/elcore-test/articles':
         setTitle('Статьи');
         break;
     }
@@ -28,20 +28,26 @@ function App() {
           <h1 className='my-5 text-center text-lg font-bold md:text-4xl'>{title}</h1>
           <div className='mb-5 flex gap-3'>
             <Link
-              className={pathname === '/' ? 'btn-link-active' : 'btn-link'}
-              to='/'
+              className={
+                pathname === '/elcore-test' ? 'btn-link-active' : 'btn-link'
+              }
+              to='/elcore-test'
             >
               Все новости и статьи
             </Link>
             <Link
-              className={pathname === '/news' ? 'btn-link-active' : 'btn-link'}
-              to='/news'
+              className={
+                pathname === '/elcore-test/news' ? 'btn-link-active' : 'btn-link'
+              }
+              to='/elcore-test/news'
             >
               Новости
             </Link>
             <Link
-              className={pathname === '/articles' ? 'btn-link-active' : 'btn-link'}
-              to='/articles'
+              className={
+                pathname === '/elcore-test/articles' ? 'btn-link-active' : 'btn-link'
+              }
+              to='/elcore-test/articles'
             >
               Статьи
             </Link>

@@ -8,7 +8,7 @@ export function Documentation({ className }: IDocumentation) {
   return (
     <div className={`bg-bg-secondary py-3 ${className}`}>
       <div className='container flex justify-between'>
-        <Link to='/'>
+        <Link to='/elcore-test'>
           <SvgSprite icon='logo' width={170} className='md:cursor-pointer' />
         </Link>
         <Menu />
