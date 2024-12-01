@@ -4,7 +4,7 @@ import { ICard } from './Card.types';
 export function Card({ className, item }: ICard) {
   return (
     <div className={`${className} flex w-fit flex-col gap-3 rounded-lg pb-6`}>
-      <img src='public/test.png' alt='#' />
+      <img src='elcore-test/public/test.png' alt='#' />
       <div className='flex gap-1'>
         {item.type === 'news' && (
           <>
