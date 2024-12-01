@@ -8,13 +8,13 @@ function App() {
 
   useEffect(() => {
     switch (pathname) {
-      case '/elcore-test':
+      case '/elcore-test/':
         setTitle('Новости и статьи');
         break;
-      case '/elcore-test/news':
+      case '/elcore-test/news/':
         setTitle('Новости');
         break;
-      case '/elcore-test/articles':
+      case '/elcore-test/articles/':
         setTitle('Статьи');
         break;
     }
@@ -29,17 +29,17 @@ function App() {
           <div className='mb-5 flex gap-3'>
             <Link
               className={
-                pathname === '/elcore-test' ? 'btn-link-active' : 'btn-link'
+                pathname === '/elcore-test/' ? 'btn-link-active' : 'btn-link'
               }
-              to='/elcore-test'
+              to='/elcore-test/'
             >
               Все новости и статьи
             </Link>
             <Link
               className={
-                pathname === '/elcore-test/news' ? 'btn-link-active' : 'btn-link'
+                pathname === '/elcore-test/news/' ? 'btn-link-active' : 'btn-link'
               }
-              to='/elcore-test/news'
+              to='/elcore-test/news/'
             >
               Новости
             </Link>
