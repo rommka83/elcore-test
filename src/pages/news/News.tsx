@@ -4,12 +4,14 @@ import { DB } from '../../../public/DB';
 import { CardListType } from '../../components/card-list/CardList.types';
 
 export function News() {
-  const [workArr, setWorkArr] = useState<CardListType>([]);
+  const [workArr, setWorkArr] = useState<CardListType>(
+    DB.filter((item) => item.type === 'news'),
+  );
 
   useEffect(() => {
     const arr = DB.filter((item) => item.type === 'news');
     setWorkArr(arr);
-  }, []);
+  }, [DB]);
 
   return <CardList workArr={workArr} />;
 }
