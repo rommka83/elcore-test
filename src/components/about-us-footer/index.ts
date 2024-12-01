@@ -1,0 +1,1 @@
+export { AboutUsFooter } from "./AboutUsFooter";

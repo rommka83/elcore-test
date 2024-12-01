@@ -1,0 +1,1 @@
+export { AdditionalSectionFooter } from "./AdditionalSectionFooter";
